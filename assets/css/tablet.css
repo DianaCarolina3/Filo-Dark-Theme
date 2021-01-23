@@ -1,0 +1,22 @@
+picture {
+  position: relative;
+  top: -60px;
+}
+.hero__container {
+  position: relative;
+  left: calc(50% - 384px);
+  width: 768px;
+}
+.footer-contain-information {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.footer-a-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+}
+.footer-social {
+  width: 100%;
+}

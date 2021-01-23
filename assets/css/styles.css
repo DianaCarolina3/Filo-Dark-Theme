@@ -9,6 +9,9 @@
   /* font */
   --Font-body: "Raleway";
   --Font-header-cta: "Open Sans";
+  --Font-sizeP: 0.8rem;
+  --font-siseH: 1rem;
+  --font-weightH: 600;
 }
 
 * {
@@ -48,23 +51,30 @@ header .nav-a {
   text-decoration: none;
   margin-right: 15px;
 }
+header .nav-a:hover {
+  text-decoration: underline;
+}
+.container {
+  position: relative;
+  top: -20px;
+}
 
 .hero {
+  margin-top: -20px;
   position: relative;
 }
 .hero .color-container {
   background: var(--Dark);
-  height: 308px;
+  max-height: 500px;
   width: 100%;
-  position: absolute;
 }
 .hero .hero--imageContainer {
-  position: absolute;
-  top: 200px;
   width: 100%;
+  z-index: auto;
+  position: relative;
+  top: 9px;
 }
 .hero figure {
-  z-index: 1;
   display: flex;
   justify-content: center;
 }
@@ -73,9 +83,12 @@ header .nav-a {
   padding-top: 30px;
   background-position: center;
   width: 85%;
+  max-width: 450px;
 }
 .hero .hero__container {
-  position: absolute;
+  z-index: 1;
+  position: relative;
+  top: -70px;
   font-family: var(--Font-body);
 }
 .hero .hero__container h2 {
@@ -114,11 +127,10 @@ header .nav-a {
   font-size: 0.8rem;
   font-family: var(--Font-header-cta);
 }
-
-.features {
-  position: relative;
-  top: 300px;
+.hero .hero__container button:hover {
+  background-color: var(--Blue);
 }
+
 .features-container {
   display: flex;
   flex-wrap: wrap;
@@ -148,14 +160,252 @@ header .nav-a {
 }
 .features .features-card p {
   text-align: center;
-  text-align: center;
-  font-size: 0.8rem;
+  font-size: var(--Font-sizeP);
   font-weight: lighter;
   line-height: 1rem;
 }
 
 .main-img {
+  max-width: 400px;
+  min-width: 200px;
+  margin: 20px;
+}
+.main__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+.description-container {
+  margin: 20px;
+  padding: 20px 0;
+  max-width: 400px;
+  height: auto;
+  color: var(--White);
+  margin-bottom: 30px;
+}
+.description-container h2 {
+  margin-bottom: 17px;
+  font-family: var(--Font-body);
+  font-size: var(--font-siseH);
+  font-weight: var(--font-weightH);
+  line-height: 1.2rem;
+}
+.description-container p {
+  margin-bottom: 17px;
+  font-family: var(--Font-header-cta);
+  font-size: var(--Font-sizeP);
+  font-weight: lighter;
+  line-height: 1rem;
+}
+.description-container a {
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  color: var(--White);
+  font-family: var(--Font-header-cta);
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--Cyan);
+  width: 124px;
+  color: var(--Cyan);
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.description-container a:hover {
+  background-color: var(--Dark-testimonials);
+  border-top: 1px solid var(--Cyan);
+}
+.description-container a img {
+  margin-left: 5px;
+}
+
+.main__card {
+  display: flex;
+  justify-content: center;
+}
+.card-container {
   position: relative;
-  left: calc(50% - 150px);
-  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--White);
+  font-family: var(--Font-header-cta);
+  margin-bottom: 230px;
+}
+.card-container img {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  display: flex;
+  width: 30px;
+  top: 0.5px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 290px;
+  height: 150px;
+  background-color: var(--Dark-testimonials);
+  padding: 20px 20px 10px;
+  margin: 15px 15px;
+  border-radius: 4px;
+}
+.card p {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  line-height: 0.9rem;
+}
+.card .card-profile {
+  position: relative;
+  left: -40px;
+  display: inherit;
+}
+.card .card-profile img {
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  left: -10px;
+}
+
+.main__acessEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.acessEmail-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  color: var(--White);
+  background-color: var(--Dark);
+  height: 280px;
+  margin: 0 20px;
+  min-width: 250px;
+  max-width: 700px;
+  border-radius: 8px;
+  padding: 30px 20px 25px;
+  box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.92);
+}
+.acessEmail-container h3 {
+  margin-bottom: 17px;
+  font-family: var(--Font-body);
+  font-size: var(--font-siseH);
+  font-weight: var(--font-weightH);
+  line-height: 1.2rem;
+}
+.acessEmail-container p {
+  margin-bottom: 17px;
+  font-family: var(--Font-header-cta);
+  font-size: var(--Font-sizeP);
+  font-weight: lighter;
+  line-height: 1rem;
+}
+.acessEmail-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.acessEmail-container form input {
+  width: 250px;
+  height: 45px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 20px;
+  outline: none;
+}
+.acessEmail-container form input::placeholder {
+  color: rgb(158, 158, 158);
+}
+.acessEmail-container button:hover {
+  background-color: var(--Cyan);
+}
+.acessEmail-container form button {
+  width: 250px;
+  height: 45px;
+  border-radius: 30px;
+  border-style: none;
+  text-align: center;
+  outline: none;
+  color: var(--White);
+  background-color: var(--Blue);
+  font-size: var(--Font-sizeP);
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  width: 100%;
+  background: var(--Dark-footer);
+}
+.footer-container {
+  position: relative;
+  top: 200px;
+  background: var(--Dark-footer);
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-contain-information {
+  margin: 0 30px 30px;
+  color: var(--White);
+}
+.footer-logo-container .footer-logo {
+  margin-bottom: 20px;
+}
+.footer-logo {
+  width: 150px;
+}
+.footer-information {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 20px auto);
+  max-width: 400px;
+}
+.footer-information img {
+  width: 20px;
+}
+.footer-information p {
+  margin-left: 20px;
+  font-family: var(--Font-header-cta);
+  font-size: var(--Font-sizeP);
+  font-weight: 500;
+  line-height: 1rem;
+}
+.footer-a {
+  margin: 10px 30px;
+}
+.footer-a li {
+  list-style: none;
+  margin: 20px 0;
+  width: 200px;
+}
+.footer-a a {
+  color: var(--White);
+  text-decoration: none;
+  font-family: var(--Font-header-cta);
+  font-size: var(--font-siseH);
+  font-weight: 500;
+  line-height: 1rem;
+}
+.footer-a a:hover {
+  text-decoration: underline;
+}
+.footer-social {
+  width: 768px;
+  display: flex;
+  justify-content: center;
+}
+.footer-social img {
+  width: 30px;
+  margin: 10px;
 }
