@@ -1,0 +1,106 @@
+:root {
+  --Font-sizeP: 1rem;
+  --Font-body: "Raleway";
+  --Font-header-cta: "Open Sans";
+}
+
+header .header-icon {
+  width: 150px;
+  margin: 20px 20px;
+}
+header nav {
+  margin: 0px 20px;
+}
+header .nav-a {
+  font-family: var(--Font-body);
+  font-size: 1rem;
+}
+
+.hero .hero__container {
+  left: calc(50% - 250px);
+  top: -100px;
+  margin: 0px;
+  width: 500px;
+}
+.hero .hero__container h2 {
+  font-size: 1.8rem;
+}
+.hero .hero__container h3 {
+  font-size: var(--Font-sizeP);
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+.features-container {
+  width: 800px;
+}
+.features .features-card {
+  margin: 20px 40px;
+}
+.features .features-card h3 {
+  font-size: 1.2rem;
+}
+
+.description-container {
+  max-width: 500px;
+}
+.description-container h2 {
+  width: 300px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.card .card-profile img {
+  left: 0px;
+}
+.card .card-profile-information {
+  padding-left: 10px;
+}
+
+.main__acessEmail form {
+  align-items: baseline;
+  flex-direction: initial;
+  justify-content: center;
+  margin-top: 30px;
+}
+.acessEmail-container {
+  padding-top: 20px;
+}
+.acessEmail-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+.acessEmail-container form input {
+  width: 350px;
+}
+.acessEmail-container form button {
+  margin-left: 10px;
+  width: 200px;
+}
+
+.footer-container {
+  padding: 0 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.footer-logo-container .footer-logo {
+  margin-left: 100px;
+}
+.footer-contain-information {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-a {
+  margin: 0;
+}
+.footer-social {
+  width: auto;
+}

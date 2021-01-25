@@ -345,6 +345,7 @@ header .nav-a:hover {
 }
 
 footer {
+  height: 60vh;
   width: 100%;
   background: var(--Dark-footer);
 }
@@ -355,15 +356,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-.footer-contain-information {
-  margin: 0 30px 30px;
-  color: var(--White);
-}
 .footer-logo-container .footer-logo {
+  position: relative;
+  top: 200px;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 .footer-logo {
   width: 150px;
+}
+.footer-contain-information {
+  margin: 0 30px 30px;
+  color: var(--White);
 }
 .footer-information {
   margin: 20px 0;
@@ -380,6 +384,10 @@ footer {
   font-size: var(--Font-sizeP);
   font-weight: 500;
   line-height: 1rem;
+}
+.col4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .footer-a {
   margin: 10px 30px;
